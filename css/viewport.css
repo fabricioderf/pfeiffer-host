@@ -1,0 +1,103 @@
+/* Responsividade */
+
+/* Laptops pequenos a partir de 1100px */
+@media (max-width: 1100px) {
+  .plans-container {
+    width: 95%;
+  }
+  .services-container ul {
+    width: 95%;
+  }
+  .plans-container {
+    width: 100%;
+    gap: 20px;
+  }
+  .plan {
+    flex-basis: 350px;
+    flex-shrink: 0;
+    gap: 5px;
+  }
+  .plan li {
+    font-size: 26px;
+  }
+  .services-container p {
+    font-size: 24px;
+  }
+}
+
+/* tablets 900px */
+@media (max-width: 900px) {
+  .main-banner p {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .plan {
+    flex-basis: 350px;
+    flex-shrink: 0;
+    gap: 5px;
+  }
+
+  .plan li {
+    font-size: 24px;
+  }
+
+  .searchdomain-container {
+    padding: 2rem 4rem;
+  }
+}
+
+/* Celulares 576px */
+@media (max-width: 576px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .plans-container {
+    width: 95%;
+  }
+
+  .plan {
+    max-width: 100%;
+  }
+
+  .searchdomain-container {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+
+  .searchdomain-container input[type="text"] {
+    width: 100%;
+  }
+
+  .contact-container {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+
+  .contact-container textarea,
+  .contact-container input {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .contact-container input[type="submit"] {
+    margin: 15px auto 0;
+  }
+
+  .main-banner h1 {
+    font-size: 60px;
+  }
+
+  .main-banner p {
+    font-size: 16px;
+    padding: 0 2rem;
+    width: fit-content;
+  }
+
+  .navbar-items li {
+    font-size: 12px;
+    margin-left: 5px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,376 @@
+/* geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica";
+}
+
+body {
+  background-color: #fcfaff;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+} */
+
+/* p {
+  color: #cacaca;
+} */
+
+/* Cabeçalho */
+
+.navbar-container {
+  background-color: rgb(33, 8, 44);
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+nav {
+  position: relative;
+}
+
+.navbar-items {
+  position: absolute;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  right: 0;
+}
+
+.navbar-items li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.navbar-items a {
+  font-family: "Cal Sans", sans-serif;
+  text-decoration: none;
+  color: #e6e6e6;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px 5px;
+  transition: 0.3s;
+}
+
+.navbar-items a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(102, 77, 112);
+}
+
+a.btn-active {
+  color: rgb(42, 6, 59);
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px;
+  /* border-radius: 5px; */
+  pointer-events: none;
+}
+
+/* main banner */
+
+.main-banner {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+
+h1 {
+  font-size: 72px;
+  margin-bottom: 24px;
+  padding-top: 140px;
+}
+
+.main-banner h1,
+.main-banner p {
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 1);
+  font-family: "Cal Sans", sans-serif;
+}
+
+.main-banner p {
+  font-size: 30px;
+  margin-top: 10px;
+  /* border-bottom: 1px solid #fff; */
+  width: fit-content;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+/* Serviços */
+
+.services-container {
+  padding: 5rem 0;
+  color: #bbb;
+}
+
+.services-container ul {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.services-container li {
+  flex-basis: 400px;
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.fas {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.fa-shield-alt {
+  color: green;
+}
+
+.fa-rocket {
+  color: rgb(255, 136, 0);
+}
+
+.fa-comments {
+  color: rgb(16, 89, 199);
+}
+
+.services-container h3 {
+  margin-bottom: 20px;
+  color: rgb(42, 6, 59);
+  font-size: 30px;
+}
+
+.services-container p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* Preços e planos */
+
+.pricing-container {
+  padding: 5rem 0;
+  text-align: center;
+  color: #555;
+}
+
+.pricing-container h2 {
+  font-size: 72px;
+  color: rgb(42, 6, 59);
+}
+
+.pricing-container p {
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.plans-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.plan {
+  flex-basis: 350px;
+  flex-shrink: 0;
+}
+
+.plan ul {
+  list-style: none;
+  border-radius: 20px;
+  margin-top: 30px;
+  box-shadow: 1px 1px 20px #b1b1b1;
+  background-color: #fdf1ff;
+}
+
+.plan li {
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.plan .price {
+  font-size: 80px;
+  letter-spacing: 2px;
+  font-family: "Cal Sans";
+  color: rgb(42, 6, 59);
+  margin: 30px 0 40px;
+}
+
+.price-style {
+  font-size: 14px;
+  color: #222;
+}
+
+.plan .plan-name {
+  height: 100px;
+  padding-top: 25px;
+  text-transform: uppercase;
+  font-family: "Cal Sans";
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: rgb(42, 6, 59);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.plan .plan-btn {
+  background-color: #f1db0e;
+  height: 75px;
+  line-height: 75px;
+  font-size: 30px;
+  color: rgb(42, 6, 59);
+  font-family: "Cal Sans";
+  cursor: pointer;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.plan .plan-btn:hover {
+  background-color: rgb(102, 77, 112);
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.plan .recommended {
+  background-color: rgb(0, 66, 207);
+  color: rgb(255, 255, 255);
+}
+
+.plan .recommended2 {
+  color: rgb(16, 89, 199);
+}
+
+/* Search domain */
+
+.searchdomain-container {
+  background-color: rgb(42, 6, 59);
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.searchdomain-container h2 {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.searchdomain-container p {
+  color: #bbb;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.searchdomain-container input {
+  display: block;
+  border: none;
+  margin: 0 auto;
+}
+
+.searchdomain-container input[type="text"] {
+  width: 40%;
+  padding: 20px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 15px #00000063;
+}
+
+.searchdomain-container input[type="submit"] {
+  font-family: "Cal Sans";
+  color: rgb(42, 6, 59);
+  width: fit-content;
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: #f1db0e;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.searchdomain-container input[type="submit"]:hover {
+  background-color: white;
+}
+
+/* Formulário de Contato */
+
+.contact-container {
+  text-align: center;
+  padding: 5rem 0 5rem 0;
+}
+
+.contact-container h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: rgb(42, 6, 59);
+}
+
+.contact-container p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #bbb;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 200px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}
+
+.contact-container textarea {
+  display: block;
+  margin: 10px auto 30px;
+  width: 610px;
+  height: 150px;
+}
+
+.contact-container input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  font-family: "Cal Sans";
+  color: rgb(42, 6, 59);
+  width: fit-content;
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: #f1db0e;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.contact-container input[type="submit"]:hover {
+  background-color: white;
+}
+
+/* Rodapé */
+
+footer {
+  color: rgb(42, 6, 59);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
